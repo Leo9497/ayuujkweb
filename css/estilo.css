@@ -60,13 +60,11 @@ h2{
 	
 }
 a {
-	text-decoration: rgb(73, 16, 16);
-	color:rgb(7, 48, 122);
+	text-decoration: rgb(34, 9, 9);
+	color:rgb(3, 36, 94);
 	font-size: 24px;
-	font-weight: 200;
+	font-weight: bold;
 	
-
-
 
 }
 #izquierdo-menu .menu li a {
