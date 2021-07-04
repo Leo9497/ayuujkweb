@@ -10,7 +10,34 @@
 	
     }
 
-
+	.galeria {
+		display: flex;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+    align-items: center;
+    justify-content: center;
+		 
+	  }
+	  
+	  .columna {
+		flex: 25%;
+		max-width: 25%;
+		padding: 0 4px;
+	  }
+	  
+	  .columna img {
+		margin-top: 8px;
+		vertical-align: middle;
+		width: 100%;
+		
+	  }
+	  
+	  @media screen and (max-width: 800px) {
+		.columna { 
+		  flex: 80%;
+		  max-width: 80%;
+		}
+	  }
 
 h1{
 	text-align: center;
@@ -27,21 +54,7 @@ h2{
 	font-size: 120%;
 }
 
-#izquierdo-menu{
 
-	float: left;
-    border: none; 
-	height: 1000px;
-	width: 220px;	
-	text-align: left; 
-	font-size: 100%;
-	font-family: sans-serif;
-	background:  #DEC9C5;
-
-
-
-
-}
 
 * {
 	margin: 0;
@@ -67,39 +80,38 @@ a {
 	
 
 }
-#izquierdo-menu .menu li a {
-	color:#494949;
-	display: block;
-	padding: 10px 5px;
-	margin: 0px;
-	background: #D5D3B9;
-}
- .menu {
-	
-	margin-right: 0px; 
-	margin-left: 0px;
-}
-#izquierdo-menu	.menu .icon-down-open{
-	float: right;
-	margin-left: 10px; 
 
-	
-}
-#izquierdo-menu .menu li a:hover {
-	background: #3F60BE;
-	color:#fff;
+ 
+
+
+img {
+	background-color: black;
+	background-image: url("papa.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width: 30%;
+	margin: 0 auto;
+	height: 450px;
+  }
+  
+  @media screen and (max-width: 2026px) {
+	.img{ 
+		background-size: 100% 50%;
+	  background-repeat: no-repeat;
+	  width: 50%;
+	  height: 500px;
 	}
-#izquierdo-menu .menu .activado > a {
-	background: #3F60BE;
-	color:#fff;
-}
-#izquierdo-menu .menu ul li a {
-	background: #424242;
-	color:#e9e9e9;
-}
-#izquierdo-menu .menu ul {
-	display: none;
-		}
+  }
+  
+  @media screen and (max-width: 550px) {
+	img{ 
+	  background-size: contain;
+	  background-repeat: no-repeat;
+	  width: 20%;
+	  height: 450px;
+	}
+  }
+
  #parrafo{
  	font-size: 130%;
  	color: rgb(0, 0, 0);
@@ -109,18 +121,21 @@ a {
  }
  .card {
 	
-	margin-left: 26%;
+	margin-left: 14%;
   }
  
   
   /* Add some padding inside the card container */
   .container {
-	padding: 6px 20px;
+	background-color: black;
+	background-image: url("papa.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	margin: 0 auto;
+	height: 500px;
   }
 
 
   
-  /* Add rounded corners to the top left and the top right corner of the image */
-  img {
-	border-radius: 5px 5px 0 0;
-  }
+  
